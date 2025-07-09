@@ -7,6 +7,12 @@ __pycache__/
 *.zip
 *.tar.gz
 *.whl
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.avi
+*.mkv
 data/
 datasets/
 images/
