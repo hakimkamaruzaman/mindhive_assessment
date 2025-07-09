@@ -22,3 +22,4 @@ models/
 cache/
 tmp/
 tests/
+.env
