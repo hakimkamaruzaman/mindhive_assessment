@@ -1,4 +1,4 @@
-rom fastapi import FastAPI, Query
+from fastapi import FastAPI, Query
 from fastapi.responses import JSONResponse
 from fastapi import APIRouter
 
