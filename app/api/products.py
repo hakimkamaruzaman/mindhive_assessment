@@ -1,9 +1,16 @@
 from fastapi import FastAPI, Query
 from fastapi.responses import JSONResponse
+from fastapi import APIRouter
 
 app = FastAPI()
 
-# Updated database (as above)
+router = APIRouter()
+
+@router.get("/some-path")
+def sample():
+    return {"message": "Hello"}
+
+
 product_data = {
     "zus all-can tumbler": {
         "price": "RM39.90",
