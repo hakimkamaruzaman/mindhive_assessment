@@ -1,7 +1,14 @@
-from fastapi import FastAPI, Query
+rom fastapi import FastAPI, Query
 from fastapi.responses import JSONResponse
+from fastapi import APIRouter
 
 app = FastAPI()
+
+router = APIRouter()
+
+@router.get("/some-path")
+def sample():
+    return {"message": "Hello"}
 
 # Updated database (as above)
 product_data = {
