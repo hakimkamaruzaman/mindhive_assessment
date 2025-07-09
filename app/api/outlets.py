@@ -1,4 +1,11 @@
 from fastapi import APIRouter, Query, HTTPException
+from fastapi import APIRouter
+
+router = APIRouter()
+
+@router.get("/")
+def sample():
+    return {"message": "Hello from outlets"}
 
 @router.get("/")
 async def search_products(query: str = Query(...)):
